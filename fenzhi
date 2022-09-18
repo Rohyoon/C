@@ -1,0 +1,81 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+
+
+int main()
+{
+	int day = 0;
+	scanf("%d", &day);
+	switch(day)
+	{
+	case 1:
+		printf("今天是星期一\n");
+	case 2:
+		printf("今天是星期二\n");
+	case 3:
+		printf("今天是星期三\n");
+	case 4:
+		printf("今天是星期四\n");
+	case 5:
+		printf("今天是星期五\n");
+	}
+	return 0;
+}
+
+int main()
+{
+	int day = 0;
+	int n = 0;
+	scanf("%d", &day);
+	switch (day)
+	{
+	case 1:
+	case 2:
+	case 3:
+		if (n == 0)
+			printf("你好！\n");
+		break;
+	case 4:
+	case 5:
+		printf("工作日\n");
+		break;
+	case  6:
+	case 7:
+		printf("休息日\n");
+		break;
+	default:
+		printf("输入错误，请重新输入\n");
+		break;
+	}
+	return 0;
+}
+int main()
+{
+	int n = 1;
+	int m = 2;
+	switch (n)
+	{
+	case 1:
+		m++;
+	case 2:
+		n++;
+	case 3:
+		switch (n)
+		{
+		case 1:
+			n++;
+		case 2:
+			m++;
+			n++;
+			break;
+		}
+	case 4:
+		m++;
+		break;
+	default:
+		break;
+	}
+	printf("m=%d ,n=%d\n", m, n);
+	return 0;
+}
