@@ -1,0 +1,95 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+//库函数
+//#include<string.h>
+//int main()
+//{
+//	char arr1[] = { "bit" };
+//	char arr2[20] = { "########" };
+//	strcpy(arr2, arr1);		//字符串复制函数
+//	printf("%s", arr2);
+//	return 0;
+//}
+
+//#include<string.h>
+//int main()
+//{
+//	char arr[] = "hello world";
+//	memset(arr, '*', 5);		//memory set 内存设置函数，将arr的前5个字符用'*'代替
+//	printf("%s\n", arr);
+//
+//	return 0;
+//}
+
+
+////自定义函数
+////设计一个函数实现交换两个数字
+//void swap(int* x, int* y)		//用指针x和y储存a和b的地址
+//{
+//	int temp = 0;
+//	temp = *x;		//*x表示通过指针x中的地址找到a的值，移动到temp中
+//	*x = *y;
+//	*y = temp;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	printf("a=%d  b=%d\n", a, b);
+//	swap(&a, &b);		//将地址传入swap函数中
+//	printf("a=%d  b=%d\n", a, b);
+//	return 0;
+//}
+
+
+////写一个函数可以判断一个数是不是素数
+//#include<math.h>
+//
+//int sushu(int n)
+//{
+//	int i = 0;
+//	for (i = 2; i <=sqrt(n); i++)
+//	{
+//			if (n % i == 0)
+//			{
+//				return 0;
+//				break;
+//			}
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	int n = 0;
+//	int temp = 0;
+//	scanf("%d", &n);
+//	temp = sushu(n);
+//	if (temp == 0)
+//	{
+//		printf("不是素数\n");
+//	}
+//	if(temp == 1)
+//	{
+//		printf("是素数\n");
+//	}
+//	return 0;
+//}
+
+//#include"add.h"		//调用头文件add.h		//实现函数的分装
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d%d",&a,&b);
+//	int sum = add(a, b);
+//	printf("%d\n", sum);
+//	return 0;
+//}
+//add头文件：int add(int, int);
+//add源文件：
+// int add(int x, int y)
+//{
+//int z = x + y;
+//return z;
+//}
