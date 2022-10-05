@@ -93,3 +93,50 @@
 //int z = x + y;
 //return z;
 //}
+
+
+
+//函数递归
+//1.接受一个整型值，按照顺序打印它的每一位。例如：输入1234，输出1 2 3 4 。
+
+//void print(int x)
+//{
+//	if (x > 9)
+//	{
+//		print(x / 10);		//递归调用：递归应该有限制条件，且每一次递归都应该跟限制条件越来越近
+//	}
+//	printf("%d  ", x % 10);
+//}
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+
+
+//2.自己写一个函数计算字符串长度
+
+//int len_char(char* str)		//数组传的是第一个字符的首地址，所以应该用char指针
+//{
+//	int n = 0;
+//	while(*str != '\0')
+//	{
+//		if (*str != ' ')
+//		{
+//			n++;		//计数器
+//		}
+//		str++;
+//	}
+//	return n;
+//}
+//
+//int main()
+//{
+//	char arr[] ="hello world";
+//	int len = 0;
+//	len = len_char(arr);		//通过自定义函数求字符串长度
+//	printf("len=%d\n", len);
+//	return 0;
+//}
